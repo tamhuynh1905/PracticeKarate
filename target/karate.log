@@ -1,0 +1,237 @@
+07:10:38.351 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags ~@ignore
+07:10:39.335 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:10:39.342 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+07:10:40.012 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+07:10:40.012 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+07:10:40.012 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+07:10:40.012 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+07:10:40.022 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+07:10:40.368 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"tamhuynh8689@fakegmail.com","password":"Kms@2019"}}
+
+07:10:41.306 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 936
+1 < 200
+1 < Date: Tue, 06 Dec 2022 00:10:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"16f-Ts9s2g0W4mbmRLoaMrnu98ukep0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GZdOTuCIUiwAH7vH21Uko7%2BlMQd8OgfyQqX9cvDAK0R0Bvmq3YwHems20ZpYIZU%2FqBNaBx%2FlBOwWdllirBOQjADVkeoU8RQVk2aUuSORURXoKN3dCNuaUmXQzDPMnCgUyNJv"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7750ccba2afe8b81-HKG
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"tamhuynh8689@fakegmail.com","username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig"}}
+
+07:10:41.311 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+07:10:41.313 [pool-1-thread-4] WARN  com.intuit.karate - this thread waited 1290 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+07:10:41.313 [pool-1-thread-2] WARN  com.intuit.karate - this thread waited 1291 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+07:10:41.313 [pool-1-thread-1] WARN  com.intuit.karate - this thread waited 1291 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+07:10:41.322 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/tags
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+07:10:41.336 [pool-1-thread-4] WARN  com.intuit.karate - did not evaluate to map '{limit: 10, offset: 0}': [type: STRING, value: {limit: 10, offset: 0}]
+07:10:41.337 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:10:41.541 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 150
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"principal identity planner204","description":"description for #(randomArticle)","body":"body for #(randomArticle)"}}
+
+07:10:41.545 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 161
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"dynamic applications orchestrator763","description":"description for Deleted_article001","body":"body for Deleted_article001"}}
+
+07:10:42.103 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 780
+2 < 200
+2 < Date: Tue, 06 Dec 2022 00:10:40 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"76-QAIKJ+jzFJHRIavFYxLRj4MZAjA"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RHC49Z3WdYHTneJJ1RPqI5dqj3ai9AGptNiZJQEm133ZmvZhY6L%2Bb%2FRDXBFktezySdheBkmoNGlAC2QzGs%2B3M%2FOMSm9j5RrH17oDE%2F4Zot9Msr2spUd6zUu1IehGWL6ZTrre"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7750ccbead9704fb-HKG
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","quia","cupiditate","deserunt"]}
+
+07:10:42.139 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 598
+1 < 200
+1 < Date: Tue, 06 Dec 2022 00:10:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1b5-Vk14vJY9ZqK9bjfhqHpHkEPgOVc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HhV9IV4JZONS9TtvXg86z50yXVBXvF9rjg5GZbgKSPpPBuUkaAIoKe%2Bjjb9zOgfTx4XwwL5lvH1Q1%2BJgZQxrz1XGvFYV%2FrCIGd1crjE4nij3OrLDVkQdtFHGzC0%2By22%2F%2FUy2"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7750ccbff8d90506-HKG
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"principal-identity-planner204-119640","title":"principal identity planner204","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:10:40.358Z","updatedAt":"2022-12-06T00:10:40.358Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+07:10:42.158 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 613
+1 < 200
+1 < Date: Tue, 06 Dec 2022 00:10:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1c7-uysrN9Q1Hcf6KI9GvJoXVYLNIYM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JF4uut7xR%2BuIij1zOpeMo41TYcWtYNszmi7lPR4BM8hXEZEnF7MeCCzogUvnkJJTwuQqa3e3Cuho2Ar4OF1Xdzo5ygbWRK13d1ad83mPTKsI9Ri309mF7tUCH%2BD%2FHODRSRZp"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7750ccbffcf40fc2-HKG
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"dynamic-applications-orchestrator763-119640","title":"dynamic applications orchestrator763","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:10:40.387Z","updatedAt":"2022-12-06T00:10:40.387Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+07:10:42.163 [pool-1-thread-2] WARN  com.intuit.karate - did not evaluate to map '{limit: 10, offset: 0}': [type: STRING, value: {limit: 10, offset: 0}]
+07:10:42.164 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+07:10:42.272 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 935
+1 < 200
+1 < Date: Tue, 06 Dec 2022 00:10:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1010-oO0wjgJ+4LymGcAfUTN/3hOJ+5E"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nmVfsOV51MK7SZN%2Bi4KWydpLkxWSXxFUufVJPRXloXMG4uQhK0SWYgOpQ3X%2F15YTvmWJeR4Kh1wolPRhO6W9U0ejD7B3AktTk6O0uY4p3GeVRhPt4tLJcjyzCQ9AMc2jowg8"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7750ccbecd4404ca-HKG
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"human-web-director572-119640","title":"human web director572","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:03:10.174Z","updatedAt":"2022-12-06T00:03:10.174Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"future-integration-specialist248-119640","title":"future integration specialist248","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:03:10.165Z","updatedAt":"2022-12-06T00:03:10.165Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"senior-accounts-agent177-119640","title":"senior accounts agent177","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:01:12.751Z","updatedAt":"2022-12-06T00:01:12.751Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article006-119640","title":"Deleted_article006","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:01:12.745Z","updatedAt":"2022-12-06T00:01:12.745Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"my_article005-119640","title":"my_article005","description":"description for my_article002","body":"body for my_article002","tagList":[],"createdAt":"2022-12-05T22:50:33.951Z","updatedAt":"2022-12-05T22:50:33.951Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article004-119640","title":"Deleted_article004","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:47:34.632Z","updatedAt":"2022-12-05T09:47:34.632Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article003-119640","title":"Deleted_article003","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:44:40.495Z","updatedAt":"2022-12-05T09:44:40.495Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article002-119640","title":"Deleted_article002","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:41:06.057Z","updatedAt":"2022-12-05T09:41:06.057Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article001-119640","title":"Deleted_article001","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:37:12.091Z","updatedAt":"2022-12-05T09:37:12.091Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"my_article004-119640","title":"my_article004","description":"description for my_article002","body":"body for my_article002","tagList":[],"createdAt":"2022-12-05T08:10:39.294Z","updatedAt":"2022-12-05T08:10:39.294Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":177}
+
+07:10:43.071 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 906
+2 < 200
+2 < Date: Tue, 06 Dec 2022 00:10:41 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"105a-z61GkFIlXGTiyh+M9vLa8p7xBQ8"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rNwyqn%2B77EB4nB1vKpzN1xLYhftxKjMQOgNq%2FmOkcN2RjdpyWcOtsJRbMd8qYde4z8ZM8SEVeg15%2FBYREfVa9ca%2Bc6nngydoXg484KN6QlmPS3di002Ay4JU07z%2Bf5rlRn3i"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7750ccc3eb2a10a4-HKG
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"dynamic-applications-orchestrator763-119640","title":"dynamic applications orchestrator763","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:10:40.387Z","updatedAt":"2022-12-06T00:10:40.387Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"principal-identity-planner204-119640","title":"principal identity planner204","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:10:40.358Z","updatedAt":"2022-12-06T00:10:40.358Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"human-web-director572-119640","title":"human web director572","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:03:10.174Z","updatedAt":"2022-12-06T00:03:10.174Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"future-integration-specialist248-119640","title":"future integration specialist248","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:03:10.165Z","updatedAt":"2022-12-06T00:03:10.165Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"senior-accounts-agent177-119640","title":"senior accounts agent177","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:01:12.751Z","updatedAt":"2022-12-06T00:01:12.751Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article006-119640","title":"Deleted_article006","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:01:12.745Z","updatedAt":"2022-12-06T00:01:12.745Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"my_article005-119640","title":"my_article005","description":"description for my_article002","body":"body for my_article002","tagList":[],"createdAt":"2022-12-05T22:50:33.951Z","updatedAt":"2022-12-05T22:50:33.951Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article004-119640","title":"Deleted_article004","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:47:34.632Z","updatedAt":"2022-12-05T09:47:34.632Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article003-119640","title":"Deleted_article003","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:44:40.495Z","updatedAt":"2022-12-05T09:44:40.495Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article002-119640","title":"Deleted_article002","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:41:06.057Z","updatedAt":"2022-12-05T09:41:06.057Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":179}
+
+07:10:43.081 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.realworld.io/api/articles/dynamic-applications-orchestrator763-119640
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+3 > Accept-Encoding: gzip,deflate
+
+
+07:10:44.681 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1599
+3 < 204
+3 < Date: Tue, 06 Dec 2022 00:10:43 GMT
+3 < Content-Length: 0
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CBQhE%2FOaK%2BdKx8lF1SF9%2BAGFegTL4c0pCAFODZTP9xd3k1K0S6Hb0zneXL14xvAIJ4D4S5i0fr9NUhPkkLaLQOfNgkUJEf0sAFl6nMIQbvRsDSF5q9SLamPS24riDMKvBM%2Ff"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 7750ccc98f8f6e67-HKG
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+07:10:44.682 [pool-1-thread-2] WARN  com.intuit.karate - did not evaluate to map '{limit: 10, offset: 0}': [type: STRING, value: {limit: 10, offset: 0}]
+07:10:44.683 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhbWh1eW5oODY4OUBmYWtlZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0YW1odXluaDg2ODkiLCJpYXQiOjE2NzAyODU0MzksImV4cCI6MTY3NTQ2OTQzOX0.MrphFfH0m-wBy4Vje49nxsYTDcYcqS6Cx47774AS6ig
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+07:10:45.569 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 886
+4 < 200
+4 < Date: Tue, 06 Dec 2022 00:10:43 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"1036-y7gCqDvugax3+gMtXUs56gO4PVY"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0DsWpe9OLutNvXYmZKhCJSNJeXTjOjrpip7RjQN4ojK3dvHemoB7rhh7thE8A8I3DbT%2F6InUmLhnjqNmhmKiPjynHMYDVFgEDnjwQRg31G%2BjSG9tbEdMpDjodXG2%2B%2BtSEHGL"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7750ccd39eae108d-HKG
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"principal-identity-planner204-119640","title":"principal identity planner204","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:10:40.358Z","updatedAt":"2022-12-06T00:10:40.358Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"human-web-director572-119640","title":"human web director572","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:03:10.174Z","updatedAt":"2022-12-06T00:03:10.174Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"future-integration-specialist248-119640","title":"future integration specialist248","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:03:10.165Z","updatedAt":"2022-12-06T00:03:10.165Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"senior-accounts-agent177-119640","title":"senior accounts agent177","description":"description for #(randomArticle)","body":"body for #(randomArticle)","tagList":[],"createdAt":"2022-12-06T00:01:12.751Z","updatedAt":"2022-12-06T00:01:12.751Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article006-119640","title":"Deleted_article006","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-06T00:01:12.745Z","updatedAt":"2022-12-06T00:01:12.745Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"my_article005-119640","title":"my_article005","description":"description for my_article002","body":"body for my_article002","tagList":[],"createdAt":"2022-12-05T22:50:33.951Z","updatedAt":"2022-12-05T22:50:33.951Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article004-119640","title":"Deleted_article004","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:47:34.632Z","updatedAt":"2022-12-05T09:47:34.632Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article003-119640","title":"Deleted_article003","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:44:40.495Z","updatedAt":"2022-12-05T09:44:40.495Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article002-119640","title":"Deleted_article002","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:41:06.057Z","updatedAt":"2022-12-05T09:41:06.057Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Deleted_article001-119640","title":"Deleted_article001","description":"description for Deleted_article001","body":"body for Deleted_article001","tagList":[],"createdAt":"2022-12-05T09:37:12.091Z","updatedAt":"2022-12-05T09:37:12.091Z","favorited":false,"favoritesCount":0,"author":{"username":"tamhuynh8689","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":178}
+
+07:10:46.475 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:application/feature/Articles.feature
+07:10:46.623 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:application/feature/HomePage.feature

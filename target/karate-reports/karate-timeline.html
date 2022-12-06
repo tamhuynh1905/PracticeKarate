@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-3","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-1","id":3},{"content":"pool-1-thread-2","id":4}];
+var items = [{"id":1,"group":1,"content":"application\/feature\/HomePage[1:6]","start":1670285439974,"end":1670285442117,"title":"application\/feature\/HomePage[1:6] 07:10:39.974-07:10:42.117 Get all tags"},{"id":2,"group":2,"content":"application\/feature\/HomePage[2:18]","start":1670285439974,"end":1670285442310,"title":"application\/feature\/HomePage[2:18] 07:10:39.974-07:10:42.310 Get all articles"},{"id":3,"group":3,"content":"application\/feature\/Articles[1:20]","start":1670285439974,"end":1670285442142,"title":"application\/feature\/Articles[1:20] 07:10:39.974-07:10:42.142 Create a new article"},{"id":4,"group":4,"content":"application\/feature\/Articles[2:29]","start":1670285439974,"end":1670285445573,"title":"application\/feature\/Articles[2:29] 07:10:39.974-07:10:45.573 Create and delete an article"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
